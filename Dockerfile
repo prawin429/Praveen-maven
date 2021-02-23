@@ -1,6 +1,8 @@
 # Pull base image 
-From tomcat:8-jre8 
+From ubuntu:latest 
 
 # Maintainer 
 MAINTAINER "prawinkumar429@gmail.com" 
-COPY ./webapp.war /usr/local/tomcat/webapps
+RUN apt-get update && apt-get install nginx
+CMD "Hello"
+EXPOSE 80
