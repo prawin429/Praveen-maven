@@ -3,4 +3,4 @@ From tomcat:latest
 
 # Maintainer 
 MAINTAINER "prawinkumar429@gmail.com" 
-COPY ./webapp.war /usr/local/tomcat/webapps
+COPY /home/jenkins/jenkins_slave/workspace/pipeline/webapp/target/webapp.war /usr/local/tomcat/webapps
